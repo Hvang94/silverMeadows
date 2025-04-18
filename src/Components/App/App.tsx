@@ -1,14 +1,33 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import './App.css'
+import Home from "../Home/Home";
 
 function App() {
 
 
   return (
     <>
-      <div>
-<h1>Testing</h1>
-      </div>
+    <Router>
+      <Switch>
+          {/* Visiting localhost:5173 will redirect to localhost:5173/home */}
+          <Redirect exact from="/" to="/home" />
+          <Route
+            exact
+            path="/home"
+          >
+            <Home />
+          </Route>
+
+          <Route>
+            <h1>404</h1>
+          </Route>
+        </Switch>
+        </Router>
     </>
   )
 }
