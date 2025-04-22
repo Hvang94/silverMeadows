@@ -1,6 +1,10 @@
 function ContactUs() {
     return(
-        <h1>Testing in Contact page</h1>
+        <>
+        <img src="contactimg.svg"/>
+        <h2>Contact Us</h2>
+        <p>Have questions? We’d love to hear from you! Contact us to learn more about Silver Meadows Assisted Living.</p>
+        </>
     )
 }
 export default ContactUs
