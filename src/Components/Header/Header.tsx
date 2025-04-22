@@ -2,7 +2,7 @@ import "./Header.css"
 // import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 
-const Header = () => {
+function Header() {
     return(
         <header className="header">
             <img className="logo" src="public/logo.png" />
@@ -17,4 +17,5 @@ const Header = () => {
         </header>
     )
 }
+
 export default Header
