@@ -6,12 +6,16 @@ import {
 } from "react-router-dom";
 import './App.css'
 import Home from "../Home/Home";
+import Header from "../Header/Header";
+import Services from "../Services/Services"
+import ContactUs from "../ContactUs/ContactUs"
 
 function App() {
 
 
   return (
     <>
+    <Header />
     <Router>
       <Switch>
           {/* Visiting localhost:5173 will redirect to localhost:5173/home */}
@@ -21,6 +25,14 @@ function App() {
             path="/home"
           >
             <Home />
+          </Route>
+
+          <Route exact path="/services">
+<Services />
+          </Route>
+
+          <Route exact path="/contact-us">
+<ContactUs />
           </Route>
 
           <Route>
