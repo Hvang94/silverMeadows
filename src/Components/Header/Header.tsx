@@ -5,8 +5,8 @@ import Button from '@mui/material/Button';
 function Header() {
     return(
         <header className="header">
-            <img className="logo" src="public/logo.png" />
-            <img className="title" src="public/title.svg" />
+            <img className="logo" src="logo.png" />
+            <img className="title" src="title.svg" />
             {/* <Link to="/Home">Home */}
             <div className="nav">
             <span className="homeLink">HOME</span>
