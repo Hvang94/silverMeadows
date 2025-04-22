@@ -7,6 +7,7 @@ import {
 import './App.css'
 import Home from "../Home/Home";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import Services from "../Services/Services"
 import ContactUs from "../ContactUs/ContactUs"
 
@@ -40,6 +41,7 @@ function App() {
           </Route>
         </Switch>
         </Router>
+        <Footer />
     </>
   )
 }
