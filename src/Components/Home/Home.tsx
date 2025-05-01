@@ -15,7 +15,7 @@ function Home() {
                 <Button className="contactBtn" variant="contained">
                     <span className="contactLink">Contact Us</span>
                 </Button>
-                <img src="public/homeimg1.svg"/>
+                <img src="homeimg1.svg"/>
             </div>
             <div className="bodyTwo">
                 <h1>Established Since 2025</h1>
@@ -27,7 +27,7 @@ function Home() {
                     welcoming environment where elders are treated like family. Join us
                     for compassionate support and peace of mind.
                 </p>
-                <img src="public/homeimg2.svg"/>
+                <img src="homeimg2.svg"/>
             </div>
         </>
     );
