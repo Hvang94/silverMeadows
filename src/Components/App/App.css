@@ -1,15 +1,6 @@
-.bodyOne, .bodyTwo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 100px;
-  gap: 60px;
+body {
+  margin: 0px;
 }
-
-.bodyOne {
-  background-color: #ECEAE3;
-}
-
-.bodyTwo {
-  /* background-color: #F8F8F8; */
+h1 {
+  margin: 0px;
 }
