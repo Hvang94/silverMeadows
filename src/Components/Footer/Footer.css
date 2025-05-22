@@ -10,7 +10,7 @@
   }
   
   .footer-logo {
-    width: 40px;
+    width: 82.4px;
     margin-right: 16px;
   }
   
@@ -18,5 +18,11 @@
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+
+  .copyright {
+    color: #3a3a3a;
+    font-size: 16px;
+    font-family: Lato;
   }
   

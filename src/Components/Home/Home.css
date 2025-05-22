@@ -15,7 +15,7 @@
     font-size: 48px;
     color: #4f5e3b;
     text-align: left;
-    /* margin-top: 8px; */
+    margin-top: 8px;
   }
 
   .homeTitle {
@@ -49,7 +49,7 @@
     border: 1px solid #748561 !important;
     background-color: #748561!important;
     text-decoration: none;
-    font-family: Lato, sans-serif;
+    font-family: Lato;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
