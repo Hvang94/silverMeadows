@@ -5,6 +5,10 @@ h1 {
   margin: 0px;
 }
 
-p{
+p {
   margin: 0px;
+}
+
+li {
+  list-style-type: none;
 }
