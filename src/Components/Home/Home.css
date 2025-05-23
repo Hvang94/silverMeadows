@@ -1,0 +1,81 @@
+.homeContainter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backgroundColor {
+  display: flex;
+  justify-content: center;
+  background-color: #eceae3;
+  width: 100%;
+}
+
+.bodyOne,
+.bodyTwo {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 60px 100px;
+  gap: 60px;
+  max-width: 1400px;
+}
+
+.greenText {
+  font-family: Lato;
+  font-size: 48px;
+  color: #4f5e3b;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.homeTitle {
+  font-family: Lato;
+  font-size: 48px;
+  text-align: left;
+  color: #3a3a3a;
+}
+
+.textContent {
+  padding-top: 48px;
+}
+
+
+.missionStatement {
+  margin: 24px 0 24px 1px;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.95;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a3a3a;
+}
+
+.servicesBtn {
+  width: auto;
+  height: 40px;
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #748561 !important;
+  background-color: #748561 !important;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.topImage {
+  margin-left: 98px;
+}
+
+.bottonImage {
+  margin-right: 98px;
+}
