@@ -1,55 +1,81 @@
+import "./ContactUs.css";
+import { Button } from "@mui/material";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function ContactUs() {
+  const formRef = useRef(null);
+  const sendEmail = (e) => {
+    e.preventDefault();
+console.log("test");
+console.log(formRef.current);
+
+    emailjs
+      .sendForm("service_0ctz8vr", "template_w5faosc", formRef.current, {
+        publicKey: "_Awz4C7gSCEWCOmtJ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <>
-      <img src="contactimg.svg" />
+      <div className="contactPage">
+        <img src="contactimg.svg" />
 
-      <h1>SORRY UNDER CONSTRUCTION</h1>
-      <h2>Contact Us</h2>
-      <p>
-        Have questions? We’d love to hear from you! Contact us to learn more
-        about Silver Meadows Assisted Living.
-      </p>
+        <h2 className="contactTitle">Contact Us</h2>
+        <p className="questions">
+          Have questions? We'd love to hear from you! Contact us to learn more
+          about Silver Meadows Assisted Living.
+        </p>
+        <div className="formAndTextContainer">
+          <div className="inputContainer">
+            <form className="formContainer" ref={formRef} onSubmit={sendEmail}>
+              <label>
+                Name<span className="required">*</span>
+              </label>
+              <input type="text" name="name" className="inputBox" required />
 
-      <div className="contact-form-container">
-        <h2>Contact Us</h2>
-        <form className="contact-form">
-          <label>
-            Name:
-            <input type="text" name="name" placeholder="Your Name" required />
-          </label>
+              <label>
+                Email<span className="required">*</span>
+              </label>
+              <input type="email" name="email" className="inputBox" required />
 
-          <label>
-            Email:
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-          </label>
+              <label>
+                Phone<span className="required">*</span>
+              </label>
+              <input type="tel" name="phone" className="inputBox" required />
 
-          <label>
-            Phone:
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Your Phone Number"
-              required
-            />
-          </label>
+              <label>
+                Message<span className="required">*</span>
+              </label>
+              <textarea
+                className="messageBox"
+                name="message"
+                required
+              ></textarea>
 
-          <label>
-            Message:
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-              required
-            ></textarea>
-          </label>
-
-          <button type="submit">Send Message</button>
-        </form>
+              <Button className="msgBtn" type="submit">Send Message</Button>
+            </form>
+          </div>
+          <div className="textContainer">
+            <div className="contactLogo">
+              <img src="logo.png" alt="Logo" />
+            </div>
+            <div className="contactInfo">
+              <p>Maplewood, MN 55119</p>
+              <p>PHONE: (651) 775-4627</p>
+              <p>FAX: (651) 123-4567</p>
+              <p>EMAIL: may.lee@silvermeadowsmn.com</p>
+              <p>HOURS: 8am-5pm</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

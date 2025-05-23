@@ -1,0 +1,106 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle {
+  height: 58px;
+  font-family: Lato;
+  font-size: 48px;
+  color: #4f5e3b;
+  text-align: center;
+  letter-spacing: 3.84px;
+}
+
+.questions {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 1.95;
+  text-align: center;
+  color: #3a3a3a;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.formAndTextContainer {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.inputContainer {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textContainer {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.msgBtn {
+  width: 140px;
+  margin-top: 8px !important; 
+  height: 40px;
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #748561 !important;
+  background-color: #748561 !important;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff !important;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: Lato;
+}
+
+.inputBox {
+  height: 50px;
+  width: 546px;
+  border-radius: 4px;
+  border: solid 1px #ced4da;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.messageBox {
+  height: 50px;
+  width: 100%;
+  max-width: 546px;
+  border-radius: 4px;
+  border: solid 1px #ced4da;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.contactInfo {
+  color: #3a3a3a;
+  font-family: Lato;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+}
+.contactLogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.required {
+  color: red;
+}

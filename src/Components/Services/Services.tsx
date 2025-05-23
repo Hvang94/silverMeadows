@@ -14,12 +14,8 @@ function Services() {
   return (
     <div className="servicesPage">
       <div className="heroSection">
-      <div className="heroImage">
-        <img
-          src="servicesimg.svg"
-          alt="Explore Our Services"
-          
-        />
+        <div className="heroImage">
+          <img src="servicesimg.svg" alt="Explore Our Services" />
         </div>
         <h2 className="sectionTitle">Assisted Living</h2>
         <p className="description">
@@ -28,15 +24,15 @@ function Services() {
           create a warm, family-like environment where tradition and quality
           care come together. Our <strong>services include</strong>:
         </p>
-      <div className="servicesList">
-        <ul>
-          {services.map((service, index) => (
-            <li key={index}>
-              <img src="checkmark.svg" />
-              {service}
-            </li>
-          ))}
-        </ul>
+        <div className="servicesList">
+          <ul>
+            {services.map((service, index) => (
+              <li key={index}>
+                <img src="checkmark.svg" />
+                {service}
+              </li>
+            ))}
+          </ul>
         </div>
         <h2 className="sectionTitle">Additional Services</h2>
         <p className="description">
@@ -46,8 +42,8 @@ function Services() {
           communication between patients and medical providers, giving families
           peace of mind and ensuring elders receive the care they deserve.
         </p>
-        </div>
       </div>
+    </div>
   );
 }
 export default Services;

@@ -4,7 +4,8 @@ import "./Home.css";
 
 function Home() {
   return (
-    <>
+    <div className="homeContainter">
+      <div className="backgroundColor">
       <div className="bodyOne">
         <div className="textContent">
           <h1 className="homeTitle">Honoring Tradition</h1>
@@ -24,7 +25,7 @@ function Home() {
         </div>
         <img src="homeimg1.svg" alt="Elderly care" className="topImage" />
       </div>
-
+      </div>
       <div className="bodyTwo">
         <img src="homeimg2.svg" alt="Family care" className="bottonImage" />
         <div className="textContent">
@@ -44,7 +45,7 @@ function Home() {
           </Link>
         </div>
       </div>
-    </>
+      </div>
   );
 }
 
