@@ -11,8 +11,8 @@ console.log("test");
 console.log(formRef.current);
 
     emailjs
-      .sendForm("service_0ctz8vr", "template_w5faosc", formRef.current, {
-        publicKey: "_Awz4C7gSCEWCOmtJ",
+      .sendForm("service_rwpbcp2", "template_6jdmdjq", formRef.current, {
+        publicKey: "2drUhlORLPsl-m8WT",
       })
       .then(
         () => {

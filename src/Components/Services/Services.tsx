@@ -34,14 +34,14 @@ function Services() {
             ))}
           </ul>
         </div>
-        <h2 className="sectionTitle">Additional Services</h2>
+        {/* <h2 className="sectionTitle">Additional Services</h2>
         <p className="description">
           We also provide professional Hmong medical interpreters for our
           clients, ensuring that language is never a barrier to quality care.
           Our interpreters are trained to facilitate accurate and compassionate
           communication between patients and medical providers, giving families
           peace of mind and ensuring elders receive the care they deserve.
-        </p>
+        </p> */}
       </div>
     </div>
   );
