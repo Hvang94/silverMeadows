@@ -12,7 +12,7 @@ console.log(formRef.current);
 
     emailjs
       .sendForm("service_rwpbcp2", "template_6jdmdjq", formRef.current, {
-        publicKey: "2drUhlORLPsl-m8WT",
+        publicKey: "2drUhlORLPsI-m8WT",
       })
       .then(
         () => {
