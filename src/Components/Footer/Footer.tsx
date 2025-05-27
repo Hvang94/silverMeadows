@@ -7,7 +7,7 @@ function Footer() {
         <img src="logo.png" alt="Logo" className="footer-logo" />
         <div>
           <p>PHONE: (651) 775-4627</p>
-          <p>FAX: (651) 123-4567</p>
+          <p>FAX: (651) 219-4958</p>
           <p>EMAIL: may.lee@silvermeadowsmn.com</p>
           <p>HOURS: 8am-5pm</p>
         </div>
