@@ -1,17 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import "./ContactUs.css";
 import { Button } from "@mui/material";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function ContactUs() {
   const formRef = useRef(null);
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
-console.log("test");
-console.log(formRef.current);
-
     emailjs
-      .sendForm("service_rwpbcp2", "template_6jdmdjq", formRef.current, {
+      .sendForm("service_rwpbcp2", "template_6jdmdjq", formRef.current!, {
         publicKey: "2drUhlORLPsI-m8WT",
       })
       .then(
